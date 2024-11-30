@@ -1,0 +1,17 @@
+#TEMPERATURAS
+
+soma = 0
+media = 0
+num_maior = 0
+num_menor = 0
+
+for i in range(3):
+    num = int(input("Informe a temperatura: "))
+    if num >= num_maior:
+        num_maior = num
+    if num <= num_maior:
+        num_menor = num
+    soma = soma + num
+    
+media = soma / (i + 1)
+print(f"A media das temperaturas é {media} a maior temperatura registrada é de {num_maior} e a menor temperatura registrada foi de {num_menor}")
